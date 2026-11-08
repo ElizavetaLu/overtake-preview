@@ -1,6 +1,6 @@
 export default function Header() {
     return (
-        <header className="px-5 fixed py-4 top-0 right-0 left-0 grid grid-cols-2 md:grid-cols-3 items-center">
+        <header className="fixed z-10 px-5 py-3.5 top-0 right-0 left-0 grid grid-cols-2 md:grid-cols-3 items-center">
             <div className="flex justify-start">
                 <a href="" className="font-wallpoet text-primary text-6xl leading-10">
                     O

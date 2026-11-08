@@ -3,7 +3,8 @@ import Header from "@/components/header";
 import SectionTitle from "@/components/section-title";
 import NestedBorderedContainer from "@/components/containers/NestedBorderedContainer";
 import Image from "next/image";
-import TestImg from "@/assets/images/test.jpg";
+import TestImg from "@/public/assets/images/test.jpg";
+import HomeImg from "@/public/assets/images/home.png";
 import Divider from "@/components/divider";
 import SectionContainer from "@/components/containers/SectionContainer";
 
@@ -14,9 +15,15 @@ export default function Home() {
       <Header />
 
       <main className="flex flex-1 flex-col gap-20">
-        <section>
-          test
-        </section>
+
+
+        <Image src={HomeImg} width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-auto object-contain"
+          alt=""
+        />
+
 
         <SectionContainer>
           <SectionTitle title="Features" />

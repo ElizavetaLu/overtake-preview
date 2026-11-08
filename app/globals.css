@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: 'Audiowide';
-  src: url('../assets/fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Wallpoet';
-  src: url('../assets/fonts/Wallpoet/Wallpoet-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/Wallpoet/Wallpoet-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 :root {
   --color-primary: #e10800;
 
-  --background: #171717;
+  --background: #111;
   --foreground: #ffffff;
 }
 
@@ -85,3 +85,18 @@ a {
 }
 
 /* 'h5': ['clamp(1rem, 0.9063rem + 0.47vw, 1.1875rem)', { lineHeight: '1.4' }], */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 3s linear infinite;
+}
